@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify Puppeteer Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Netlify Puppeteer Demo</h1>
+      <p>
+        A demonstration of how to use Puppeteer in a Netlify function to take a
+        PDF screenshot of a web page.
+      </p>
+      <p>
+        <a href="https://github.com/vnglst/netlify-puppeteer-pdf-demo">
+          🛠 Source code
+        </a>
+        <br />
+        <a
+          href="https://bitsofco.de/how-to-use-puppeteer-in-a-netlify-aws-lambda-function/"
+        >
+          📖 Based on the following article
+        </a>
+      </p>
+
+      <form>
+        <input
+          type="url"
+          id="page"
+          aria-label="URL"
+          value="https://koenvangilst.nl"
+        />
+        <button type="submit">Create PDF!</button>
+      </form>
+
+      <div id="result" aria-live="polite"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
